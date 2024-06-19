@@ -138,7 +138,7 @@ proptest-derive = { version = "0.4.0" }
 serde_json = { version = "1.0.117", default-features = false, features = ["raw_value", "std"] }
 serde = { version = "1.0.203", default-features = false, features = ["alloc", "derive", "rc"] }
 toml = { version = "0.8.14", default-features = false, features = ["display", "parse"] }
-vrl = { version = "0.16.0", features = ["arbitrary", "cli", "test", "test_framework"] }
+vrl = { version = "0.16.0", features = ["arbitrary", "cli", "test", "test_framework"], git = "https://github.com/LazyMaple/vrl.git" }
 
 [dependencies]
 pin-project.workspace = true
@@ -352,7 +352,7 @@ arr_macro = { version = "0.2.1" }
 heim = { git = "https://github.com/vectordotdev/heim.git", branch = "update-nix", default-features = false, features = ["disk"] }
 
 # make sure to update the external docs when the Lua version changes
-mlua = { version = "0.9.8", default-features = false, features = ["lua54", "send", "vendored", "macros"], optional = true }
+mlua = { version = "0.9.8", default-features = false, features = ["luajit52", "send", "macros"], optional = true }
 
 [target.'cfg(windows)'.dependencies]
 windows-service = "0.7.0"

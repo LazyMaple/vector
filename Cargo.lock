@@ -10959,8 +10959,7 @@ checksum = "6a02e4885ed3bc0f2de90ea6dd45ebcbb66dacffe03547fadbb0eeae2770887d"
 [[package]]
 name = "vrl"
 version = "0.16.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6a714e10e3f6bac2ef76935b9281cc7434cc6f85f6ddab644383454555b63346"
+source = "git+https://github.com/LazyMaple/vrl.git#df1da4ce47b389b70e9175846908f8e23b0d2105"
 dependencies = [
  "aes",
  "ansi_term",
@@ -11039,6 +11038,7 @@ dependencies = [
  "syslog_loose",
  "termcolor",
  "thiserror",
+ "tokio",
  "tracing 0.1.40",
  "uaparser",
  "url",
