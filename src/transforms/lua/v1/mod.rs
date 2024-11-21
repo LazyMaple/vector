@@ -115,7 +115,7 @@ impl Lua {
         // In order to support loading C modules in Lua, we need to create unsafe instance
         // without debug library.
         let lua = unsafe {
-            mlua::Lua::unsafe_new_with(mlua::StdLib::ALL_SAFE, mlua::LuaOptions::default())
+            mlua::Lua::unsafe_new_with(mlua::StdLib::ALL_SAFE | mlua::StdLib::FFI, mlua::LuaOptions::default())
         };
 
         let additional_paths = search_dirs

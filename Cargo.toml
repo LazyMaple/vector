@@ -163,7 +163,7 @@ vector-lib = { path = "lib/vector-lib", default-features = false, features = ["v
 vector-config = { path = "lib/vector-config" }
 vector-config-common = { path = "lib/vector-config-common" }
 vector-config-macros = { path = "lib/vector-config-macros" }
-vrl = { git = "https://github.com/vectordotdev/vrl", branch = "main", features = ["arbitrary", "cli", "test", "test_framework"] }
+vrl = { git = "https://github.com/LazyMaple/vrl", branch = "main", features = ["arbitrary", "cli", "test", "test_framework"] }
 
 [dependencies]
 pin-project.workspace = true
@@ -378,7 +378,7 @@ arr_macro = { version = "0.2.1" }
 heim = { git = "https://github.com/vectordotdev/heim.git", branch = "update-nix", default-features = false, features = ["disk"] }
 
 # make sure to update the external docs when the Lua version changes
-mlua = { version = "0.10.1", default-features = false, features = ["lua54", "send", "vendored", "macros"], optional = true }
+mlua = { version = "0.10.1", default-features = false, features = ["luajit52", "send", "vendored", "macros"], optional = true }
 sysinfo = "0.32.0"
 
 [target.'cfg(windows)'.dependencies]
